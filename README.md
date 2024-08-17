@@ -20,11 +20,15 @@ Ensure you have the following installed:
 
 Installation:
 1. Clone the repository:
+
    git clone https://github.com/shreya-prabu/cellstitch.git
+
    cd cellstitch
-2. Install the required python packages:
+3. Install the required python packages:
+
    pip install -r requirements.txt
-3. Verify that the required packages have been installed:
+5. Verify that the required packages have been installed:
+
    pip install dash cellpose torch tifffile pillow numpy flask
 
 File Structure:
@@ -34,12 +38,19 @@ File Structure:
 
 Usage:
 1. Run the application:
+
    python app.py
-2. Access the app:
+3. Access the app:
+
    Open your web browser and go to http://127.0.0.1:8050/.
-3. Using the app:
+5. Using the app:
+
    Upload Image: Drag and drop or select the image file you want to process.
+
    Specify Image Shape: Enter the desired image dimensions in the X, Y, Z format (e.g., 20,224,224).
+
    Set Flow Threshold: Enter the flow threshold value (between 0.0 and 20.0, default is 1.0).
+
    Run the Algorithm: Click the "Run CellStitch" button to start processing.
+
    Download Result: Once processing is complete, click the provided link to download the segmentation masks.
